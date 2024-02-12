@@ -1,4 +1,21 @@
 
 video {
     z-index: -1;
+    position: fixed;
+}
+
+/* #navbar :not(:hover) {
+    filter: blur(5px);
+}
+
+#myName :hover, #navRight a:hover {
+    color: cyan;
+    background-color: magenta;
+    transition: 0.5s,;
+} */
+
+#myName :hover {
+    color: cyan;
+    background-color: magenta;
+    transition: all 0.5s, background-color 0.75s;
 }
