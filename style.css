@@ -1,4 +1,10 @@
 
+@font-face {
+    font-family: 'ronatalia';
+    src: url(./Fonts/Ronatalia/Ronatalia.otf);
+}
+
+
 /* #myName :hover, #navRight a:hover {
     color: cyan;
     text-shadow: 0 0 9px whitesmoke;
@@ -13,7 +19,7 @@
 
 * {
     color: #fff;
-    transition: 0.5s;    
+    transition: 0.5s;
 }
 
 video {
@@ -29,17 +35,32 @@ video {
 }
 
 #navbar {
+    width: 100%;
     display: flex;
     align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#navbar a {
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    color: aqua;
+    text-shadow: 0 0 10px #fff;
 }
 
 #navbar ul {
     list-style-type: none;
     display: flex;
-
 }
 
 #navbar ul a {
     list-style-type: none;
     padding: 1vh 2vw;
+}
+
+#nav-right ul:hover a:not(:hover) {
+    filter: blur(5px);
 }
