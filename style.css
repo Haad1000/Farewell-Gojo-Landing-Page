@@ -1,7 +1,17 @@
-/* @font-face {
-    font-family: 'ronatalia';
-    src: url(./Fonts/Ronatalia/Ronatalia.otf);
-} */
+@font-face {
+    font-family: 'sd-asian';
+    src: url("./Fonts/SD-Asian/Sdasian-WyDon.ttf");
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("./Fonts/Poppins/Poppins-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'Poppins-bold';
+    src: url("./Fonts/Poppins/Poppins-Bold.ttf");
+}
 
 * {
     color: #fff;
@@ -22,7 +32,7 @@ video {
     right: 0;
     top: 0;
     bottom: 0;
-    filter: saturate(150%) contrast(150%);
+    filter: saturate(200%) contrast(150%);
     opacity: 50%;
 }
 
@@ -32,6 +42,8 @@ video {
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 2vh;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 #navbar a {
@@ -44,14 +56,21 @@ video {
     text-shadow: 0 0 10px #fff;
 }
 
+#navbar h1 {
+    margin-left: 10vw;
+    font-family: 'sd-asian';
+}
+
 #navbar ul {
     list-style-type: none;
     display: flex;
+    margin-right: 10vw;
 }
 
 #navbar ul a {
     list-style-type: none;
     padding: 1vh 2vw;
+    font-family: 'Poppins-bold'
 }
 
 #nav-right ul:hover a:not(:hover) {
@@ -62,18 +81,22 @@ video {
     margin-top: 20vh;
 }
 
-#main-content h1, p{
+#main-content h1,
+p {
     display: flex;
     justify-content: space-around;
 }
 
 #main-content h1 {
-    font-size: 8vh;
+    font-size: 16vh;
     font-weight: bold;
+    font-family: 'sd-asian';
 }
 
 #main-content p {
     font-size: 2.25vh;
+    margin-top: 5vh;
+    font-family: 'Poppins'
 }
 
 #buttons {
@@ -89,16 +112,25 @@ video {
     backdrop-filter: blur(500px);
     margin: 5px;
     border: 0;
-}
-
-#audio-button button:hover{
-    box-shadow: 0 10px 25px 3px aqua;
-    filter: drop-shadow(6px 6px 10px blueviolet);
-    transform: translateY(-5px);
     transition: 0.5s;
 }
 
-#audio-button button{
+#audio-button button:hover {
+    background-color: #00a0c0;
+    box-shadow: 0 10px 25px 3px aqua;
+    filter: drop-shadow(6px 6px 10px blueviolet);
+    transform: translateY(-5px);
+    transition: 0.5s ease-in-out;
+}
+
+#audio-button ul:hover button:not(:hover) {
+    box-shadow: 0 5px 25px 3px aqua;
+    transform: translateY(-3px);
+    transition: 0.5s ease-in-out;
+    filter: blur(1px);
+}
+
+#audio-button button {
     margin: 5vh 3vw;
 }
 
@@ -107,12 +139,20 @@ video {
     backdrop-filter: blur(5px);
     margin: 5px;
     border: 0;
+    transition: 0.5s;
 }
 
 #social-button button:hover {
-    background-color: aqua;
-    box-shadow: 0 5px 25px 3px aqua;
+    background-color: #00a0c0;
+    box-shadow: 0 5px 25px 12px aqua;
     filter: drop-shadow(0px 3px 10px purple);
-    transform: translateY(-2.5px);
-    transition: 0.5s;
+    transform: translateY(-3px);
+    transition: 0.5s ease-in-out;
+}
+
+#social-button ul:hover button:not(:hover) {
+    box-shadow: 0 5px 25px 3px aqua;
+    transform: translateY(-1.5px);
+    transition: 0.5s ease-in-out;
+    filter: blur(1px);
 }
