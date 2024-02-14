@@ -22,7 +22,7 @@ video {
     right: 0;
     top: 0;
     bottom: 0;
-    filter: contrast(150%);
+    filter: saturate(150%) contrast(150%);
     opacity: 50%;
 }
 
