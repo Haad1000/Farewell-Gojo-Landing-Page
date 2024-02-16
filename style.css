@@ -57,14 +57,14 @@ video {
 }
 
 #navbar h1 {
-    margin-left: 10vw;
+    padding-left: 18vw;
     font-family: 'sd-asian';
 }
 
 #navbar ul {
     list-style-type: none;
     display: flex;
-    margin-right: 10vw;
+    padding-right: 18vw;
 }
 
 #navbar ul a {
